@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset ="utf-8" />
+	<link rel="stylesheet" href="SiteWeb.css" />
+	<title>CSS</title>
+	</head>
+	
+	<body> <h1 id="retour">Le langage CSS</h1>
+	Decouvrons ensemble le langage CSS. 
+	
+	<ol> 	
+		<li> <a href="#1">Qu'est-ce que le CSS ? </a></li>
+		<li> <a href="#2">Comment l'utiliser ? </a></li>
+		<li> <a href="#3">Quelques bases du langage CSS </a></li>
+	</ol>
+	
+	<h2 id="1">Qu'est-ce que le CSS ?</h2>
+	
+	CSS est un langage de presentation de page web. Il est l'abreviation de "Cascading Style Sheets", ce qui signifie en francais 
+	"Feuilles de style en cascade". Il a 
+	ete introduit dans les annees 1996, pour ameliorer le rendu visuel des pages HTML. En effet, le langage CSS ne s'utilise qu'avec HTML ou XHTML.
+	Son developpement est assure par le W3C (World Wide Web Consortium).<p>
+	<img src="w3c.jpg" alt="logo de w3c"   />
+	</p>
+	
+	
+	<h2 id="2">Comment l'utiliser ? </h2>
+	
+	Il faut utiliser des navigateurs pour observer directement les resultats du code. Les plus 
+	communs sont Internet Explorer, Google Chrome, Safari et 
+	Firefox. Il est toutefois conseille de verifier son code sur plusieurs navigateurs, car ils possedent tous des differences de compatibilite, ce qui
+	peut par exemple ne pas afficher les fonctionnalites recentes. En effet, Internet Explorer a longtemps ete en retard par rapport a ses conccurents dans
+	le domaine du CSS, meme si depuis les dernieres mises a jour, ce retard tend a disparaitre. Voici un tableau qui resume les compatibilites des 
+	navigateurs avec CSS : <br/><br/>
+	<img src="compatibilitecss.png" alt="Tableau des compatibilites entre navigateurs et CSS" title="Compatibilite des navigateurs" ><br/><br/>
+	Mais rassurez-vous, tous les navigateurs ont leur defaut. Si un navigateur ne peut lire une instruction, il se contentera de l'ignorer.
+	Il existe plusieurs manieres d'utiliser le langage CSS, je vais les presenter de celle que je juge la plus pertinente (en haut) a la moins 
+	pertinente (en bas):
+	<ol>
+	<li>Comme le langage CSS est associe au langage HTML, il est envisageable d'utiliser un editeur de texte comme Geany ou Notepad++.<br/> Commencez
+	par creer un fichier
+	HTML (<a href="html.html" title="Vous ne savez pas creer un fichier HTML ?" >Comment creer un fichier HTML ?</a>). 
+
+	Ouvrez votre editeur de texte, personellement, j'utilise Notepad++ ainsi que le navigateur Google Chrome. Reglez la langue (parametrage --> preference)
+	et le langage (Langage --> C --> CSS) afin d'optimiser
+	votre "comprehension du logiciel", c'est ce que j'appelle la "comprehension des options" et la coloration syntaxique automatique. 
+	Creez votre fichier (Fichier --> Nouveau ou CTRL+N), et enregistrez-le quelque part sous le format "css",
+	c'est-a-dire "x.css". Par la suite, allez dans votre fichier HTML, trouvez la partie "< head >" du code, et notez : 
+	" < link rel="stylesheet" href ="x.css" /> <br/>
+	Vous venez de lier votre fichier CSS a votre fichier HTML! Sachez que l'on peut lier la meme page CSS pour plusieurs pages HTML, en procedant comme 
+	dit precedemment sur les pages HTML. </li>
+	<li>La deuxieme methode pour utiliser du CSS dans son fichier consiste a inserer le code CSS dans une balise "< style > < / style >" qui se situe dans 
+	la balise "< head >  < / head>".  </li>
+	<li>L'avant derniere methode consiste a mettre des attributs style directement dans les balises. Cela donne par exemple : <br/>
+	" < p style="color=olive;"> Ce texte sera de couleur olive ! < / p > " </li>
+	<li>Et enfin la derniere methode, la plus vieille et la moins pratique. Elle consiste a ne pas utiliser CSS du tout, et a decorer sa page en utilisant
+	integralement le langage HTML. Peu pratique, le nombre de balise augmentait exponentiellement, et le programmeur finissait tot ou tard par se perdre.
+	Cela donnait par exemple : "< p font color="#aab1c3" > Ce texte sera colore ! < / p >". </li>
+	</ol>
+	<h2 id="3">Quelques bases du langage CSS </h2>
+	Le langage CSS est compose de trois grands elements:
+	<ol>
+	<li><mark>Le nom de balise</mark><br/>
+	Il s'agit du nom de la balise HTML dont on cherche a changer l'apparence. </li>
+	<li><mark>Ce que l'on met a l'interieur</mark><br/>
+	Il s'agit des effets de style qui s'appliqueront a la balise. Il peut s'agit de couleurs, de mots colores ou, plus globalement, de fonds d'ecrans
+	par exemple. Il faut entrer la propriete, ajouter ":" puis mettre la valeur que l'on veut afficher, et terminer par ";".</li>
+	<li><mark>Les accolades</mark><br/>
+	Situees sous le nom de la balise, et autour de(s) propriete(s) de CSS, elles lient le nom de la balise a ses attributs.</li> </ol>
+	<em>Un petit exemple :</em><br/>
+	Par exemple, pour colorier les titres h1 et h2 en rouge, on va utiliser la propriete "color". Cela s'ecrit : <br/>
+	h1,h2<br/>
+	{<br/>
+		color:red;<br/>
+	}</ol><br/><br/>
+	
+	Maintenant que vous en savez plus a propos du fonctionnement du langage CSS, il est temps d'apprendre a s'en servir !
+	<ul>
+	
+	
+	<li><mark>Inserer des commentaires</mark> <br/>
+	Les commentaires n'apparaissent pas sur la page web, ils restent a l'interieur du code. Ils ont pour avantage d'aider le programmeur a se reperer,
+	surtout lorsque le code est tres long et/ou tres complique. Cela peut egalement servir a aider un autre programmeur a se reperer. Il s'ecrivent
+	sous la forme : <br/>
+	"/* Ceci est un commentaire */" </li><br/>
+	<li><mark>Changer la taille du texte</mark><br/>
+	Il existe deux methodes pour changer la taille d'un texte.
+	<ol>
+	<li> <em>La taille absolue</em><br/>
+	p<br/>
+	{<br/>
+	font-size: 16pix;<br/>
+	}<br/>
+	Cela permet de choisir la taille en pixel de ses caracteres.</li>
+	<li><em>La taille relative</em><br/>
+	p<br/>
+	{<br/>
+	font-size: small/medium/large/x.x em;<br/>
+	}<br/>
+	Ici, il ne faut choisir qu'une seule des propositions precedentes. "Small" correspond a une petite police, "medium" correspond a une police de taille 
+	normale,
+	"large" correspond a une grande police, "x.x em" correspond a une taille qui varie en fonction des "x" (1 em correspond a une police de taille
+	normale, quand ce nombre augmente, la taille augmente egalement).</li></ol><br/>
+	<li><mark>Changer la police</mark><br/>
+	p<br/>
+	{<br/>
+	font-family: Arial,Verdana,etc... serif;  /* L'ordinateur essaiera d'afficher Arial en premier, puis Verdana, et ainsi de suite... */<br/>
+	}<br/>
+	"serif" correspond a une police par defaut, qui est disponible quelque soit l'ordinateur.</li><br/>
+	<li><mark>Changer le style d'ecriture</mark><br/>
+	p<br/>
+	{<br/>
+		font-style: italic/oblique/normal/bold/underline/line-through/overline/blink ;	<br/>
+	}<br/>
+	"italic" = italique, "oblique" = une sorte d'italique, "normal" = le texte est normal (ca peut servir a annuler une mise en italique par exemple),
+	"bold" = gras, "underline" = souligne, "line-through" = barre, "overline" = sousligne mais au dessus, "blink" = clignotant. <br/>
+	On peut en mettre plusieurs en meme temps, mais trop de details a la fois peut nuire a l'esthetique de la page web.</li> <br/>
+	<li><mark>Changer le fond d'ecran</mark><br/>
+	body<br/>
+	{<br/>
+	background-color = aqua;  /*Le fond d'ecran sera de couleur bleu clair */<br/>
+	color = olive ;           /*Le texte sera de couleur vert-olive */<br/>
+	}<br/>
+	Ici, le fond d'ecran est devenu noir et le texte est devenu vert-olive. Cela montre que meme si c'est la balise < body > qui est utilisee,
+	le texte garde sa couleur verte-olive.
+	</li><br/>
+	<li><mark>Appliquer une image de fond</mark> <br/>
+	body <br/>
+	{<br/>
+		background-image: url("image.gif");<br/>
+		background-attachment : fixed (fixe) / scroll (image qui defile)  ;   /*Deux options a propos du fond d'ecran */ <br/>
+	}<br/>
+	Il faut placer le fichier image.gif dans le meme dossier que la page HTML et CSS.
+	<li><mark>Traiter une balise en particulier</mark><br/>
+	Je veux dire, comment faire pour mettre un paragraphe < p > en rouge quand tous ses paragraphes sont deja mis en bleu ? Pour cela, il est possible
+	de rajouter a ce paragraphe un attribut "class". Cet attribut sert a attribuer un nom a ce paragraphe, que l'on pourra utiliser dans la feuille de
+	style CSS. Dans le fichier CSS, on garde la meme syntaxe, et on ajoute un "." devant cet attribut. Cela donne par exemple : <br/>
+	<em>Dans le fichier HTML :</em> <br/>
+	< p > Ceci est un paragraphe qui restera en bleu < /p ><br/>
+	< p class="ParagrapheRouge" > Ce petit bout de texte sera note en rouge. < /p > <br/>
+	<em>Dans le fichier CSS : </em> <br/>
+	p <br/>
+	{<br/>
+	color:blue;<br/>
+	}<br/>
+	<br/>
+	.ParagrapheRouge<br/>
+	{<br/>
+	color:red;<br/>
+	}<br/><br/>
+	Cela nous donne l'image suivante :<br/>
+	<p>
+	<img src="ExempleCSS.jpg" alt="Image illustrant l'exemple ci-dessus"   />
+	</p><br/> Notez qu'il existe un attribut nomme "id" qui permet d'obtenir les memes resultats, a une difference pres : on ne peut utiliser cet
+	attribut qu'une seule fois... Il faut pour cela, echanger dans le programme CSS le "." par un "#".</li>
+	<li><mark>Traiter un mot en particulier</mark><br/>
+	Meme problematique que precedemment, peut-on peut changer un mot en vert quand le paragraphe qui l'entoure est ecrit en bleu ? La reponse est oui.
+	Pour ce faire, on doit utiliser des balises dites "universelles" comme "< span > < / span>" ou "< div " < / div>".<br/><br/>
+	<em>Dans le fichier HTML : </em><br/>
+	
+	< p > Ce mot va etre écrit en < span class="vert">vert< / span>, et seulement celui-là !< / p><br/><br/>
+	
+	<em>Dans le fichier CSS : </em><br/>
+	
+	p<br/>
+	{<br/>
+		color:blue;<br/>
+	}<br/>
+	.vert<br/>
+	{<br/>
+		color:green;<br/>
+	}<br/><br/>
+	Cela nous donne l'image suivante :<br/>
+	<p>
+	<img src="ExempleCSS2.jpg" alt="Image illustrant l'exemple ci-dessus"   />
+	</p><br/> </li>
+	<li><mark>Selectionner une balise contenue dans une autre balise plus grande</mark><br/>
+	p strong<br/>
+	{<br/>
+		color : blue;<br/>
+	}<br/>
+	Cela selectionne toutes les balises < strong > situees dans les balises < p >. Retenez qu'on les ecrit du plus grand au plus petit ensemble d'ou
+	le nom de CSS qui veut dire "Feuilles de style en cascade". </li>
+	<li><mark>Selectionner une balise situee juste apres une autre</mark><br/>
+	h1 + p<br/>
+	{<br/>
+		color : olive;<br/>
+	}<br/>
+	Cela selectionne la premiere balise (ici un paragraphe) situee apres le titre h1. Encore une fois, on part du plus grand ensemble (h1). </li>
+	</ul><br/><br/>
+	
+	
+ 	<a href="#retour"> Retourner en haut de la page </a> <br/>
+	<a href="siteweb.html">Revenir sur le site principal</a> <br/>
+	<a href="mailto:MatthieuC@ymail.com">Des idees? Des suggestions? Des reclamations? Envoyez vos idees ici !</a>
+	
+	
+
+	</body>
+</html>

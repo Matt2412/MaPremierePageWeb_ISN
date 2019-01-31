@@ -1,0 +1,82 @@
+h2           /* Cela englobe TOUS les titres h2 */
+{
+    color: rgb(248,10,10);
+}
+mark
+{
+	color: black;
+	font-size: 1.2em;
+}
+h1
+{
+	font-weight: bold;
+	text-align: center;
+	text-decoration: blink, underline;
+	font-size: 2.5em;
+	color: rgb(248,10,10);
+}
+.imageflottante
+{
+	float:middle;
+}
+.sous
+{
+	clear:left;
+}
+body   /* C'EST LA COULEUR DU FOND D'ECRAN */
+{
+	background-image: url("FondEcran.jpeg");  
+	/*background-color: black;  */
+	background-attachment: fixed;
+	background-repeat: repeat;
+	color: rgb(223,240,11);
+	opacity : 1;
+}
+strong
+{
+color:gray;
+font-size:1.1em;
+}
+
+ /* DANS HTML : <p class="NomDeBalise">Bonjour et bienvenue sur mon site !</p>  permet de ne colorier qu'un seul paragraphe, ce qui permet :
+ NomDeBalise
+ {
+	color: red;
+	font-size: 0.8em; #1 est la taille normale, "<1"=plus petit et ">1"=plus grand
+ }
+ */
+ /*Pour definir des proprietes d'images dans CSS, mettre # :
+ #Image
+ {
+	
+ }   */
+ /* Balise universelle <span></span> :
+ .NomBalise
+ {
+	color:purple;
+ } */
+ /* Balise contenue dans une autre (<em> dans <h2> par exemple) :
+ h2 em
+ {
+ 
+ }
+ */
+ /*Changer la police
+ p{
+ font-family:"Comic Sans MS", "Verdana","Arial",sans-serif;
+ }
+ */
+ /*
+ p
+ {
+	font-style: italique,oblique(plus ou moins italique) ou normal;                                                          POUR METTRE QQ CHOSE EN ITALIQUE 
+	font-weight: bold(gras),normal;                                                                                          POUR METTRE QQ CHOSE EN GRAS
+	text-decoration: underline(souligne), line-throught(barre), overline(ligne au dessus), blink(clignotant?), none(normal); POUR DECORER LE TEXTE
+	text-align: left(gauche), center(centre), right(droite), justify(ca prend toute la largeur de la page);
+ }
+ */
+ /* METTRE DES COULEURS
+ {
+	color: rgb(x,y,z)   ALLER DANS PAINT->MODIFIER LES COULEURS->METTRE DANS L'ORDRE LA VALEUR DE ROUGE,VERT,BLEU
+}
+ 

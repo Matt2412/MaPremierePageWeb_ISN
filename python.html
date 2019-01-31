@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset ="utf-8" />
+	<link rel="stylesheet" href="SiteWeb.css" />
+	<title>PYTHON</title>
+	</head>
+	<body><h1 id="retour">Le langage Python</h1>
+	Nous allons explorer le langage de programmation qu'on nomme Python.
+	<ol>
+		<li> <a href="#1">Qu'est-ce que le Python ? </a></li> <!-- Ancres -->
+		
+		<li> <a href="#2">Comment l'utiliser ? </a></li>
+		
+		<li> <a href="#3">Quelques commandes </a> </li>
+		
+	</ol>	
+	<h2 id="1">Qu'est-ce que le Python ?</h2>
+		Python est un langage semi-interprete multi-paradigme(= maniere d'executer plusieurs procedures afin d'arriver a un resultat)
+		cree par Guido Van Rossum vers les annees 1990. Il s'inspire du langage ABC pour creer Python, dont le nom "Python" vient de la
+		serie "Monty Python". <br/><p>
+		<img src="montypython.jpg" alt="Image des Monty Python" /> </p>
+		Il est gratuit et fonctionne sur toutes les plateformes (Windows, Linux ou encore OSX). Aujourd'hui, les versions courantes 
+		sont les versions 2.7.3 et 3.2.3 (l'evolution <br/>
+		du langage est assuree par la Python Software Foundation.
+
+	<h2 id="2">Comment l'utiliser ? </h2>
+	Pour utiliser le langage Python, il faut un editeur de texte. Geany et Notepad++ conviennent, meme si d'autres editeurs specialises dans le langage Python
+	comme Pyzo sont plus pratiques. Il est egalement possible d'aller sur le site officiel de
+	Python : <a href=" https://www.python.org/">Le site officiel de Python.</a> A partir de ce site, vous pourrez telecharger une application
+	nommee "IDLE", qui permet de faire des scripts de Python.
+	
+	<h2 id="3">Quelques commandes </h2>
+	Le contenu suivant est relativement peu detaille, il manque beaucoup de passage et les passages cites sont resumes tres brievement. Afin de limiter les erreurs, il est conseille de ne pas recopier mot a mot ce <br/>
+	qui est ecrit, et d'utiliser un editeur qui indente automatiquement (tant qu'on y est, il faut indenter en appuyant sur *TAB* ou plusieurs fois sur *ESPACE* a chaque fois que vous voyez ".  .").
+	<ul>
+	<li> <mark>Pour definir une variable,</mark> il suffit de lui donner un nom, de mettre un "=" et de lui attribuer une valeur (3 pour int par exemple), (7.1 pour float par exemple) ou encore ("Hello" pour string par exemple). </li>
+	<li> <mark>On peut egalement faire des operations a l'aide de Python,</mark> comme ecrire dans la console "2 + 2". On peut egalement mettre des variables : "a - b" par exemple. Pour les differentes operations, il existe "+", 
+	"-", "*" pour multiplier, "/" pour diviser et bien d'autres.
+	<li> <mark>Pour creer des structures conditionelles,</mark> il existe divers elements. Tout d'abord, il y a les instructions de controle (if,elif,else respectivement si,et si,sinon en anglais) qui permettent au <br/>
+	programme de tourner tout seul. Par la suite, on trouve le bloc d'instructions, de la forme :<br/> 
+	"if x > 2:<br/>
+	.  .print('x est strictement superieur a 2')"<br/>            
+	 Pour les differentes operations, se reporter au tableau suivant :  <figure>
+																			<img src="ConditionPython.jpg" class="imageflottante" alt="Tableau des conditions" />
+																			<figcaption></figcaption>
+																		</figure></li>
+	 
+	<li><p class="sous"><mark>Pour faire une boucle,</mark> il existe deux methodes. <br/>
+	La premiere est la boucle "for k in range(x,y,z)"avec x une valeur comprise, y une valeur exclue et z le nombre de pas pour passer de x a y. Cela signifie en anglais "pour k de portee(x,y,z)".<br/>
+	La seconde se traduit par "tant que", elle s'appelle "while". Apres avoir ajoute une instruction de controle, elle execute l'instruction. Attention, il faut mettre une instruction pour stopper la boucle <br/>
+	sinon elle peut tourner indefinimment !<br/> </p></li>
+	<li> <mark>Il est possible de definir sa propre fonction.</mark> Pour cela, il faut ecrire "def NomDeLaFonction(x):". A la fin du bloc d'instruction, preferer le mot-clef "return" a la fonction "print". <br/>
+	Un exemple de fonction: <br/>
+	def max(a,b):<br/>
+	.  .if a>b:<br/>
+	.  .  .return a<br/>
+	.  .return b<br/> </li>
+	<li> <mark>On peut bien entendu manipuler des fichiers.</mark> Pour creer un fichier, ecrire "f=open("Fichier.txt",'w'). Remplacer "Fichier.txt" par le chemin si ce fichier n'est pas dans le meme dossier que <br/>
+	le programme Python. Il existe d'autres manipulations comme "f.read()" qui lit tout le fichier et bien sur "f.close()" qui permet de le fermer.
+	
+	
+	
+	
+	
+	<br/><br/><br/>
+ 	<a href="#retour"> Retourner en haut de la page </a> <br/>
+	<a href="siteweb.html">Revenir sur le site principal</a> <br/>
+	<a href="mailto:MatthieuC@ymail.com">Des idees? Des suggestions? Des reclamations? Envoyez vos idees ici !</a>
+	</body>
+</html>
